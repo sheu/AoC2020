@@ -104,7 +104,7 @@ class Day12 {
     fun Pair<Int, Int>.rotate(degrees: Int) :Pair<Int, Int>{
         val radians = degrees.toDouble() * (PI/180)
         val x = first*cos(radians).toInt() - second * sin(radians).toInt()
-        val y = first*sin(radians).toInt() - second * cos(radians).toInt()
+        val y = first*sin(radians).toInt() + second * cos(radians).toInt()
         return Pair(x, y)
     }
 
